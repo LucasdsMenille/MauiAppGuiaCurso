@@ -33,4 +33,21 @@
         </VerticalStackLayout>
     </ScrollView>
 
+    <Grid ColumnDefinitions="*,*"
+        RowDefinitions="*,*,*,*,*,*" 
+        RowSpacing="1 " ColumnSpacing="1"
+       >
+
+        <Button Grid.Row="0" Grid.Column="0"
+          Style="{StaticResource Btncommon}"
+          x:Name="aventura" Text="1º ANO" Clicked="aventura_Clicked"/>
+        
+        <Button Grid.Row="0" Grid.Column="1"
+          Style="{StaticResource Btncommon}"
+          x:Name="comedia" Text="2º ANO" Clicked="comedia_Clicked"/>
+        
+        <Button Grid.Row="0" Grid.Column="2"
+          Style="{StaticResource Btncommon}"
+          x:Name="drama" Text="3º ANO" Clicked="drama_Clicked"/>
+
 </ContentPage>
