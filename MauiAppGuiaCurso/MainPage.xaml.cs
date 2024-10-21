@@ -8,6 +8,12 @@
         {
             InitializeComponent();
         }
+
+        private void InitializeComponent()
+        {
+            throw new NotImplementedException();
+        }
+
         private void pri_Clicked(object sender, EventArgs e)
         {
             try
@@ -27,7 +33,7 @@
         {
             try
             {
-                Navigation.PushAsync(new categorias.segundo.Mainsegundo());
+                Navigation.PushAsync(new MauiAppGuiaCurso.categorias.segundo.Mainsegundo());
 
             }
             catch (Exception ex)
