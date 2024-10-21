@@ -8,6 +8,48 @@
         {
             InitializeComponent();
         }
+        private void pri_Clicked(object sender, EventArgs e)
+        {
+            try
+            {
+                Navigation.PushAsync(new categorias.primeiro.Mainprimeiro());
+
+            }
+            catch (Exception ex)
+            {
+                DisplayAlert("Ops", ex.Message, "OK");
+            }
+
+
+        }
+
+        private void seg_Clicked(object sender, EventArgs e)
+        {
+            try
+            {
+                Navigation.PushAsync(new categorias.segundo.Mainsegundo());
+
+            }
+            catch (Exception ex)
+            {
+                DisplayAlert("Ops", ex.Message, "OK");
+            }
+        }
+
+        private void ter_Clicked(object sender, EventArgs e)
+        {
+            try
+            {
+                Navigation.PushAsync(new categorias.terceiro.Mainterceiro());
+
+            }
+            catch (Exception ex)
+            {
+                DisplayAlert("Ops", ex.Message, "OK");
+            }
+        }
+
+      
     }
 
 }
